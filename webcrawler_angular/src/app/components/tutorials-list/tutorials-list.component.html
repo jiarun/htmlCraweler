@@ -1,0 +1,62 @@
+<div class="list row">
+  <div class="col-md-8">
+    <div>
+   
+    </div>
+  </div>
+  <div class="col-md-6">
+     <h4>Website List</h4>
+    <ul class="list-group">
+      <li
+        class="list-group-item"
+        *ngFor="let tutorial of tutorials; let i = index"
+        [class.active]="i == currentIndex"
+        (click)="setActiveTutorial(tutorial, i)"
+      >
+        {{ tutorial.pageName }}
+      </li>
+    </ul>
+
+    
+  </div>
+  <div class="col-md-6">
+    <div *ngIf="currentTutorial">
+      <h4>Website Status</h4>
+      <div>
+        <label><strong>Website Name:</strong></label> {{ currentTutorial.pageName }}
+      </div>
+      <div>
+        <label><strong>Access Status:</strong></label>
+        {{currentTutorial.accessStatus === null ? 'No Response' : currentTutorial.accessStatus }}
+      </div>
+      <div>
+        <label><strong>Found :</strong></label>
+        {{currentTutorial.found === null ? 'No Response' : currentTutorial.found }}
+      </div>
+      <div  *ngIf="currentTutorial.listPair">
+         <table class="table table-striped">  
+    <thead>  
+        <tr>  
+          <th style="width:70%">Word</th>  
+          <th style="width:70%">Status</th>   
+        </tr>  
+    </thead>  
+    <tbody>  
+      
+      <tr *ngFor="let student of currentTutorial.listPair">  
+        <td>{{ student.key }}</td>  
+        <td>{{ student.value }}</td>   
+      </tr>  
+    
+    </tbody>  
+  </table>  
+        <label><strong>Response Time :</strong></label>
+        {{currentTutorial.responseTime === null ? 'No Response' : currentTutorial.responseTime }}
+      </div>
+      <div>
+        <label><strong>TimeStamp :</strong></label>
+        {{currentTutorial.timeStamp === null ? 'No Response' : currentTutorial.timeStamp }}
+      </div>
+    </div>
+  </div>
+</div>
