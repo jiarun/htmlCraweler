@@ -1,0 +1,59 @@
+[
+  {
+    "key": "page1",
+    "pageName": "About Baeldung _ Baeldung.html",
+    "url": "https://www.tutorialspoint.com/about/return_refund_policy.htm",
+    "download": true,
+    "lookupWords": [
+      "developers",
+      "Java ecosystem",
+      "twitter"
+    ]
+  },
+  {
+    "key": "page2",
+    "pageName": "About Duplicate HTML",
+    "url": "https://www.baeldung.com/aboutrr",
+    "download": true,
+    "lookupWords": [
+      "developers",
+      "Java ecosystem",
+      "twitter"
+    ]
+  },
+  {
+    "key": "page3",
+    "pageName": "About Angular IO",
+    "url": "https://angular.io/guide/setup-local",
+    "download": true,
+    "lookupWords": [
+      "setup",
+      "tutorial",
+      "twitter"
+    ]
+  },
+  {
+    "key": "page4",
+    "pageName": "About Javatpoint",
+    "url": "https://www.javatpoint.com/",
+    "download": true,
+    "lookupWords": [
+      "java",
+      "dot net",
+      "facebook"
+    ]
+  },
+  {
+    "key": "page5",
+    "pageName": "About Simple Learn",
+    "url": "https://www.simplilearn.com/tutorials/aws-tutorial",
+    "download": true,
+    "lookupWords": [
+      "AWS",
+      "Java ecosystem",
+      "instagram"
+    ]
+  }
+
+
+]
